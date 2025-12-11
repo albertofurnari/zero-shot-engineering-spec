@@ -1,0 +1,10 @@
+{
+  "role": "Technical Reviewer",
+  "task": "Analyze the text and identify logical inconsistencies only",
+  "constraints": [
+    "No colloquial tone",
+    "No added content",
+    "No rewrites"
+  ],
+  "output_format": "markdown_list"
+}
