@@ -8,7 +8,7 @@
 ![Docs: EN](https://img.shields.io/badge/docs-English-blue)
 ![Docs: IT](https://img.shields.io/badge/docs-Italian-orange)
 ![Framework](https://img.shields.io/badge/type-LLM%20Control%20Framework-purple.svg)
-![DOI](https://img.shields.io/badge/DOI-coming_soon-critical.svg)
+[![DOI](https://zenodo.org/badge/1114291456.svg)](https://doi.org/10.5281/zenodo.17909342)
 ![GitHub Sponsors](https://img.shields.io/badge/sponsor-on%20github-ff69b4.svg)
 ![Dark Minimal](https://img.shields.io/badge/style-minimal-black.svg)
 
