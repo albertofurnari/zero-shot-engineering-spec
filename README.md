@@ -8,7 +8,7 @@
 ![Docs: EN](https://img.shields.io/badge/docs-English-blue)
 ![Docs: IT](https://img.shields.io/badge/docs-Italian-orange)
 ![Framework](https://img.shields.io/badge/type-LLM%20Control%20Framework-purple.svg)
-![DOI](https://img.shields.io/badge/DOI-coming_soon-critical.svg)
+![DOI](https://doi.org/10.5281/zenodo.17909342)
 ![GitHub Sponsors](https://img.shields.io/badge/sponsor-on%20github-ff69b4.svg)
 ![Dark Minimal](https://img.shields.io/badge/style-minimal-black.svg)
 
@@ -67,6 +67,14 @@ This public specification is released under the **Creative Commons CC BY-NC-SA 4
 - **SA** – Derivative works must keep the same license
 
 See [`LICENSE`](LICENSE) for details.
+
+
+---
+
+## How to cite
+
+Furnari, A. (2025). *Zero-Shot Engineering — Public Specification (v1.0)*. Zenodo.
+https://doi.org/10.5281/zenodo.17909343
 
 ---
 
