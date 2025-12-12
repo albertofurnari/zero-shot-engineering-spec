@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it."
+title: "Zero-Shot Engineering — Public Specification"
+version: 1.0.0
+authors:
+  - family-names: Furnari
+    given-names: Alberto
+license: CC-BY-NC-SA-4.0
+repository-code: "https://github.com/albertofurnari/zero-shot-engineering-spec"
+keywords:
+  - "Prompt Engineering"
+  - "LLM Control"
+  - "Zero-Shot Engineering"
+  - "Constraint-based control"
