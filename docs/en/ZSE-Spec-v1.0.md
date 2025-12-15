@@ -77,7 +77,7 @@ This reduces the branching factor and limits semantic drift.
 
 ### 2.3 Output Formatting
 
-The output format acts as a structural cage.
+The output format acts as a structural constraint.
 
 Examples:
 
