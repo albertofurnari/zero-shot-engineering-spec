@@ -1,9 +1,9 @@
-# Zero-Shot Engineering — Public Specification (v1.0)
+# Zero-Shot Engineering — Public Specification (v1.0.8)
 
 ## 0. Abstract
 
 Zero-Shot Engineering (ZSE) is a constraint-based framework for controlling autoregressive generation in zero-shot settings.  
-Instead of providing examples, ZSE shapes the **semantic subspace** in which an LLM is allowed to operate through three control vectors:
+Instead of providing examples, ZSE shapes the **semantic region** in which an LLM is allowed to operate through three control vectors:
 
 1. **Role Conditioning**  
 2. **Constraints Injection**  
@@ -28,7 +28,7 @@ ZSE mitigates these issues by reducing:
 
 - effective entropy of the conditional distribution  
 - branching factor of the decoding trajectory  
-- variance across generations  
+- dispersion across generations (measured via entropy proxies)  
 
 ---
 
@@ -58,7 +58,7 @@ Act as a Senior Technical Reviewer specialized in engineering documentation.
 Constraints declare what the model must or must not output.
 
 - **Prescriptive constraints:** require specific structure or elements.  
-- **Proscriptive constraints:** suppress entire token families.
+- **Proscriptive constraints:** suppress entire categories of undesired output.
 
 **Example (negative constraints):**
 
