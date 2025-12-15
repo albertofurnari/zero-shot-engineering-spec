@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it."
 title: "Zero-Shot Engineering — Public Specification"
-version: 1.0.0
+version: 1.0.8
 authors:
   - family-names: Furnari
     given-names: Alberto
@@ -12,6 +12,5 @@ keywords:
   - "LLM Control"
   - "Zero-Shot Engineering"
   - "Constraint-based control"
-doi: 10.5281/zenodo.17909342
-date-released: 2025-12-11
-version: 1.0.0
+doi: 10.5281/zenodo.17909367
+date-released: 2025-12-15
