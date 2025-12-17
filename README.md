@@ -1,129 +1,109 @@
-# Zero-Shot Engineering — Public Specification (v1.0.8)
+# Zero-Shot Engineering — Public Overview (v1.1.0)
 
-![ZSE Spec Version](https://img.shields.io/badge/ZSE_Spec-v1.0-blue.svg)
+![ZSE Spec Version](https://img.shields.io/badge/ZSE_Spec-v1.1.0-blue.svg)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
 ![Latest Release](https://img.shields.io/github/v/release/albertofurnari/zero-shot-engineering-spec)
 ![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
 ![Discipline](https://img.shields.io/badge/discipline-LLM%20Control%20Patterns-yellow.svg)
 ![Docs: EN](https://img.shields.io/badge/docs-English-blue)
 ![Docs: IT](https://img.shields.io/badge/docs-Italian-orange)
-![Framework](https://img.shields.io/badge/type-LLM%20Control%20Framework-purple.svg)
+![Type](https://img.shields.io/badge/type-Technical%20Specification-purple.svg)
 [![DOI](https://zenodo.org/badge/1114291456.svg)](https://doi.org/10.5281/zenodo.17909367)
-![GitHub Sponsors](https://img.shields.io/badge/sponsor-on%20github-ff69b4.svg)
-![Dark Minimal](https://img.shields.io/badge/style-minimal-black.svg)
+![Style](https://img.shields.io/badge/style-minimal-black.svg)
 
-**Zero-Shot Engineering (ZSE)** is a constraint-based framework for controlling Large Language Models (LLMs) in zero-shot settings.  
-The goal is not to “ask better questions”, but to **shape the conditional distribution** so that generation becomes more stable, predictable, and reusable.
+**Zero-Shot Engineering (ZSE)** is a **technical specification** for inference-time control of Large Language Models (LLMs) in zero-shot settings.  
+The goal is not to “ask better questions”, but to **shape the conditional distribution** to achieve more stable, predictable, and verifiable generations.
+
+> ⚠️ **Access notice**  
+> The **full technical specification (PDF)** is distributed separately and is **not publicly available** in this repository.
 
 ---
 
 ## Specification Status
 
 - **Status:** Stable  
-- **Current version:** v1.0.8  
-- **Change policy:**  
-  - v1.0.x → clarifications, errata, examples (no semantic changes)  
-  - v1.x   → backward-compatible extensions  
-  - v2.0   → breaking changes
+- **Current version:** v1.1.0  
+- **Distribution:** controlled (paywall)  
+- **Repository role:** public index, metadata, and supporting material
+
+### Versioning policy (spec-oriented)
+- **PATCH (x.y.z)** → editorial corrections  
+- **MINOR (x.y.0)** → normative clarifications  
+- **MAJOR (x.0.0)** → non-backward-compatible changes
 
 ---
 
-ZSE is built on three core control vectors:
+## What This Repository Contains
 
-1. **Role Conditioning** – defines the initial semantic subspace  
-2. **Constraints Injection** – applies positive and negative constraints to reduce the branching factor  
-3. **Output Formatting** – enforces structural “cages” that make generation highly constrained and operationally predictable
+This repository **does not contain** the full normative ZSE specification.
 
-This repository contains the **public specification** of ZSE and a minimal set of examples.
+It provides instead:
+- citation metadata (`CITATION.cff`);
+- public descriptive documentation;
+- non-normative examples;
+- versioned references to the ZSE specification.
 
----
-
-## Normative Scope
-
-This repository defines the **normative specification** of Zero-Shot Engineering.
-
-The following concepts are **normative** and must be interpreted exactly as defined
-in the specification:
-
-- Zero-Shot Engineering (ZSE)
-- Role Conditioning
-- Constraints Injection
-- Output Formatting
-- Branching Factor (operational proxy)
-
-Any use of the term “ZSE” that contradicts these definitions
-does not conform to this specification.
+It is intended for:
+- researchers,
+- reviewers,
+- integrators,
+- readers with legitimate access to the full specification.
 
 ---
 
-## 📚 Documentation
+## Conceptual Foundations (Non-Normative)
 
-- **English spec**: [`docs/en/ZSE-Spec-v1.0.md`](docs/en/ZSE-Spec-v1.0.md)  
-- **Italian spec (work in progress)**: [`docs/it/ZSE-Spec-v1.0.it.md`](docs/it/ZSE-Spec-v1.0.it.md)
+ZSE is based on three core control vectors:
 
-Examples:
+1. **Role Conditioning** — definition of the semantic subspace  
+2. **Constraints Injection** — prescriptive and proscriptive constraints  
+3. **Output Formatting** — verifiable structural constraints
 
-- [`examples/example_prompt_zse.en.md`](examples/example_prompt_zse.en.md)  
-- [`examples/minimal_template.json`](examples/minimal_template.json)
+The **normative definitions, rules, and guarantees** are specified exclusively
+in the full technical specification distributed under controlled access.
+
+---
+
+## 📚 Available Material
+
+- **Descriptive documentation (EN):** `docs/en/`
+- **Descriptive documentation (IT):** `docs/it/`
+- **Non-normative examples:** `examples/`
 
 ---
 
 ## 🎯 Purpose
 
-The ZSE public specification aims to:
+The ZSE specification aims to:
 
-1. **Define Zero-Shot Engineering as an engineering discipline** for LLM control patterns.  
-2. **Provide a minimal standard structure** for ZSE-compatible prompts (role, task, constraints, output format).  
-3. **Offer a citable reference** for tools, agents, and multi-model systems that adopt ZSE.
-
-The full technical whitepaper (with mathematical formalism, log-probability analysis, and advanced case studies) is distributed separately as premium content.
+1. Define Zero-Shot Engineering as an **engineering discipline** for inference-time LLM control.  
+2. Provide a **formal and citable reference** for tools, agents, and systems adopting ZSE.  
+3. Establish a **shared conceptual vocabulary**, not an open tutorial.
 
 ---
 
 ## 🌍 Languages
 
-- **Primary language:** English (`README.md`, `docs/en/...`)  
-- **Italian version:** [`README.it.md`](README.it.md) and `docs/it/...`
-
-Both versions describe the same framework; the English one is considered canonical for citation.
-
----
-
-## 🛠️ Contributions & Governance
-
-This repository hosts a **technical specification**, not a discussion draft.
-
-Accepted contributions:
-- Errata and clarifications
-- Examples and tooling
-- Editorial improvements
-
-Rejected contributions:
-- Semantic reinterpretations
-- Renaming of core concepts
-- Changes to axioms without a major version bump
-
-Final decisions on wording, scope, and versioning
-rest with the maintainer to preserve semantic coherence.
+- This README is in **English**.
+- An Italian version is available in [`README.it.md`](README.it.md).
 
 ---
 
 ## 📜 License
 
-This public specification is released under the **Creative Commons CC BY-NC-SA 4.0** license.
+The content of this repository is released under  
+**Creative Commons CC BY-NC-SA 4.0**.
 
-- **BY** – You must attribute the work to **Alberto Furnari**  
-- **NC** – No direct commercial use  
-- **SA** – Derivative works must keep the same license
+This license **does not grant access** to the full technical specification.
 
 See [`LICENSE`](LICENSE) for details.
 
-
 ---
 
-## How to cite
+## How to Cite
 
-Furnari, A. (2025). *Zero-Shot Engineering — Public Specification (v1.0)*. Zenodo.
+Furnari, A. (2025).  
+*Zero-Shot Engineering — Public Overview (v1.1.0).* Zenodo.  
 https://doi.org/10.5281/zenodo.17909367
 
 ---
@@ -134,7 +114,4 @@ https://doi.org/10.5281/zenodo.17909367
 Senior System Engineer & AI Technical Lead  
 
 - LinkedIn: https://www.linkedin.com/in/alberto-furnari-97695028  
-- Newsletter: https://albertofurnari.substack.com  
-
-Issues and suggestions for improvement are welcome.
-
+- Newsletter: https://albertofurnari.substack.com
