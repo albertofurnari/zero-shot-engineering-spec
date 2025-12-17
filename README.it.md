@@ -1,79 +1,102 @@
-# Zero-Shot Engineering — Specifica Pubblica (v1.0.8)
+# Zero-Shot Engineering — Specifica Pubblica (v1.1.0)
 
-![ZSE Spec Version](https://img.shields.io/badge/ZSE_Spec-v1.0-blue.svg)
+![ZSE Spec Version](https://img.shields.io/badge/ZSE_Spec-v1.1.0-blue.svg)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
 ![Latest Release](https://img.shields.io/github/v/release/albertofurnari/zero-shot-engineering-spec)
 ![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
 ![Discipline](https://img.shields.io/badge/discipline-LLM%20Control%20Patterns-yellow.svg)
 ![Docs: EN](https://img.shields.io/badge/docs-English-blue)
 ![Docs: IT](https://img.shields.io/badge/docs-Italian-orange)
-![Framework](https://img.shields.io/badge/type-LLM%20Control%20Framework-purple.svg)
+![Type](https://img.shields.io/badge/type-Technical%20Specification-purple.svg)
 [![DOI](https://zenodo.org/badge/1114291456.svg)](https://doi.org/10.5281/zenodo.17909367)
-![GitHub Sponsors](https://img.shields.io/badge/sponsor-on%20github-ff69b4.svg)
-![Dark Minimal](https://img.shields.io/badge/style-minimal-black.svg)
+![Style](https://img.shields.io/badge/style-minimal-black.svg)
 
-**Zero-Shot Engineering (ZSE)** è un framework di controllo per Large Language Models (LLM) in scenari zero-shot.  
-L’obiettivo non è “fare domande migliori”, ma **modellare la distribuzione condizionata** in modo da rendere la generazione più stabile, prevedibile e riutilizzabile.
+**Zero-Shot Engineering (ZSE)** è una **specifica tecnica** per il controllo inference-time dei Large Language Models (LLM) in scenari zero-shot.  
+L’obiettivo non è “fare domande migliori”, ma **modellare la distribuzione condizionata** per ottenere generazioni più stabili, prevedibili e verificabili.
+
+> ⚠️ **Nota di accesso**  
+> La **specifica tecnica completa (PDF)** è distribuita separatamente e **non è pubblicamente disponibile** in questo repository.
 
 ---
 
 ## Stato della Specifica
 
 - **Stato:** Stable  
-- **Versione corrente:** v1.0.8  
-- **Politica di modifica:**  
-  - v1.0.x → chiarimenti, errata, esempi (nessun cambiamento semantico)  
-  - v1.x   → estensioni retrocompatibili  
-  - v2.0   → cambiamenti non retrocompatibili
+- **Versione corrente:** v1.1.0  
+- **Distribuzione:** controllata (paywall)  
+- **Repository role:** supporto pubblico e indice tecnico
+
+### Politica di versioning (spec-oriented)
+- **PATCH (x.y.z)** → correzioni editoriali  
+- **MINOR (x.y.0)** → chiarimenti normativi  
+- **MAJOR (x.0.0)** → cambiamenti non retrocompatibili
 
 ---
 
-ZSE si fonda su tre vettori di controllo:
+## Cosa contiene questo repository
 
-1. **Role Conditioning** – definisce la regione semantica di partenza  
-2. **Constraints Injection** – applica vincoli positivi e negativi per ridurre il branching factor  
-3. **Output Formatting** – impone vincoli strutturali che rendono l’output altamente vincolato e operativamente prevedibile
+Questo repository **NON** contiene la specifica tecnica completa.
 
-Questa repository contiene la **specifica pubblica** di ZSE e alcuni esempi minimi di utilizzo.
+Include invece:
+- metadata di citazione (`CITATION.cff`);
+- documentazione descrittiva e introduttiva;
+- esempi **non normativi**;
+- riferimenti versionati alla specifica ZSE.
 
----
-
-## 📚 Documentazione
-
-- **Spec in inglese (canonica):** [`docs/en/ZSE-Spec-v1.0.md`](docs/en/ZSE-Spec-v1.0.md)  
-- **Spec in italiano (in sviluppo):** [`docs/it/ZSE-Spec-v1.0.it.md`](docs/it/ZSE-Spec-v1.0.it.md)
-
-Esempi:
-
-- [`examples/example_prompt_zse.en.md`](examples/example_prompt_zse.en.md)  
-- [`examples/minimal_template.json`](examples/minimal_template.json)
+È pensato per:
+- ricercatori,
+- revisori,
+- integratori,
+- lettori che hanno accesso alla specifica completa.
 
 ---
 
-## 🎯 Obiettivo
+## Fondamenti concettuali
 
-Questa specifica pubblica ha tre scopi principali:
+ZSE si basa su tre vettori di controllo:
 
-1. **Definire ZSE come disciplina ingegneristica** per il controllo degli LLM.  
-2. **Fornire una struttura minima standard** per la costruzione di prompt compatibili con ZSE (ruolo, compito, vincoli, formato di output).  
-3. **Offrire una base citabile** per tool, agenti e sistemi multi-modello che adottano ZSE.
+1. **Role Conditioning** — definizione del sottospazio semantico  
+2. **Constraints Injection** — vincoli prescrittivi e proscrittivi  
+3. **Output Formatting** — struttura sintattica verificabile
 
-La versione completa del whitepaper tecnico (con formalismi matematici, analisi log-probabilistica ed esempi avanzati) è distribuita separatamente come contenuto premium.
+La formalizzazione completa, i vincoli normativi e le implicazioni operative
+sono definiti **esclusivamente** nella specifica tecnica distribuita separatamente.
+
+---
+
+## 📚 Documentazione disponibile
+
+- **Materiale descrittivo (EN):** `docs/en/`
+- **Materiale descrittivo (IT):** `docs/it/`
+- **Esempi non normativi:** `examples/`
+
+---
+
+## 🎯 Scopo della Specifica
+
+La specifica ZSE ha tre obiettivi principali:
+
+1. Definire ZSE come **disciplina ingegneristica** per il controllo inference-time degli LLM.  
+2. Fornire una **base concettuale e normativa** per sistemi, agenti e tool compatibili.  
+3. Costituire un **riferimento citabile** per lavori accademici e industriali.
 
 ---
 
 ## 🌍 Lingue
 
-- La documentazione **principale** è in **inglese** (`README.md`, `docs/en/...`).  
-- Questa pagina (`README.it.md`) e `docs/it/...` forniscono una versione localizzata per lettori italofoni.
+- Questo README è in **italiano**.
+- Materiali descrittivi sono disponibili anche in **inglese**.
 
 ---
 
 ## 📜 Licenza
 
-Questa specifica è rilasciata sotto licenza **Creative Commons CC BY-NC-SA 4.0**.
+Il contenuto di questo repository è rilasciato sotto licenza  
+**Creative Commons CC BY-NC-SA 4.0**.
 
-Per i dettagli, vedi il file [`LICENSE`](LICENSE).
+La licenza **non implica** accesso alla specifica tecnica completa.
+
+Vedi [`LICENSE`](LICENSE) per i dettagli.
 
 ---
 
@@ -83,5 +106,4 @@ Per i dettagli, vedi il file [`LICENSE`](LICENSE).
 Senior System Engineer & AI Technical Lead  
 
 - LinkedIn: https://www.linkedin.com/in/alberto-furnari-97695028  
-- Newsletter: https://albertofurnari.substack.com  
-
+- Newsletter: https://albertofurnari.substack.com
