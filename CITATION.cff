@@ -1,5 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this specification, please cite it as below."
+message: >
+  If you reference Zero-Shot Engineering (ZSE), please cite the technical
+  specification as described below. Note that the full specification
+  is distributed under controlled access and is not publicly available
+  in this repository.
 title: "Zero-Shot Engineering e Control Patterns per LLM"
 version: "1.1.0"
 date-released: 2025-12-17
@@ -8,18 +12,20 @@ authors:
     given-names: Alberto
     email: alberto.furnari@gmail.com
     orcid: https://orcid.org/0000-0002-XXXX-XXXX
-repository-code: https://github.com/albertofurnari/zero-shot-engineering-spec
-url: https://github.com/albertofurnari/zero-shot-engineering-spec
 abstract: >
-  Zero-Shot Engineering (ZSE) is a specification for inference-time control
-  of Large Language Models via structured prompt design. The document defines
-  operational constraints, control patterns, and applicability boundaries
-  for reducing output variance without modifying model weights.
+  Zero-Shot Engineering (ZSE) is a technical specification for inference-time
+  control of Large Language Models via structured prompt design.
+  The specification defines normative control patterns, operational constraints,
+  and applicability boundaries for reducing output variance without modifying
+  model weights. The full technical specification is distributed separately
+  under controlled access.
 keywords:
   - Zero-Shot Engineering
   - Prompt Engineering
   - Large Language Models
   - Inference-Time Control
   - Variance Reduction
-  - Specification
-license: CC-BY-4.0
+  - Technical Specification
+repository-code: https://github.com/albertofurnari/zero-shot-engineering-spec
+url: https://github.com/albertofurnari/zero-shot-engineering-spec
+license: CC-BY-NC-SA-4.0
